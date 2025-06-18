@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    line-height: 1.6;
+   color: #f0f0f0;
+   
+}
+body {
+   min-height: 100vh;    
+    width: 100%;            
+    position: relative;     
+background: radial-gradient(circle at bottom left, #0f172a, #000);        
+}
+
+         /*.............................................Navbar..................................*/
+
+
+nav{
+   background: radial-gradient(circle at bottom left, #0f172a, #000);        
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+   font-size:16px;
+   border-bottom: 1px solid rgb(88, 88, 88);
+   position: fixed; 
+   top: 0;
+   width: 100%;
+   z-index: 1000; 
+} 
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 75px;
+
+}
+nav a{
+  height: 100%;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.logo{
+    font-size: x-large;
+    padding-left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+
+}
+nav .logo:first-child{
+  margin-right: auto;
+  color: #ffcc00;
+}
+nav ul li:nth-child(2) a {
+  color: #00bfff; 
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: #00bfff; 
+}
+
+
+
+
+
+                     /*.....................Spacer........................ */
+
+nav .spacer {
+  flex: 0.4;
+}
+
+                  /*...................................... Dark/Light Mode..........................*/
+
+#mode{
+  padding: 4px 16px ;
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #323030;
+  border-radius: 10px;
+
+}
+  
+
+                             /* .....................Who I am section............................*/
+.section {
+   height: 50vh;
+   padding: 0 40px;
+   margin-left: 250px;
+   font-size:45px;
+   margin-top: 92px;
+   
+}
+.section h1 {
+   color: #f0f0f0;
+
+}
+.section h2 {
+    
+  margin: 10px 0;
+     color: #f0f0f0;
+
+}
+
+                                      /* ..............................Md Hasnain............................ */
+.animated-name {
+  display: inline-flex; 
+  overflow: hidden; 
+  white-space: pre;
+}
+
+.animated-name .letter {
+  display: inline-block; 
+  opacity: 0;
+  transform: translateY(100%); 
+  animation: fadeInFromBottom 0.6s forwards;
+  animation-timing-function:step-start;
+}
+
+.animated-name .letter:nth-child(1) { animation-delay: 0s; }  
+.animated-name .letter:nth-child(2) { animation-delay: 0.1s; } 
+.animated-name .letter:nth-child(3) { animation-delay: 0.2s; } 
+.animated-name .letter:nth-child(4) { animation-delay: 0.3s; } 
+.animated-name .letter:nth-child(5) { animation-delay: 0.4s; } 
+.animated-name .letter:nth-child(6) { animation-delay: 0.5s; }
+.animated-name .letter:nth-child(7) { animation-delay: 0.6s; } 
+.animated-name .letter:nth-child(8) { animation-delay: 0.7s; }
+.animated-name .letter:nth-child(9) { animation-delay: 0.8s; }
+.animated-name .letter:nth-child(10) { animation-delay: 0.9s; }
+
+@keyframes fadeInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+                                                   /* ..............................Md Hasnain............................ Close ........... */
+
+
+.section strong {
+  font-weight: bold;
+  color: white;
+}
+                                                  /* ...................Developer............................... */
+.Developer {
+  font-weight: bold;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899); /* blue → purple → pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#qoutes{
+
+    font-size: 16px;
+    font-family:Verdana, Tahoma, sans-serif
+}
+
+                                             /* ...............................Say hello button............................... */
+
+#sayHelloButton{
+
+    background-color: #007bff; 
+    margin-top: 92px;
+    color: white;             
+    padding: 12px 30px;        
+    border: none;             
+    border-radius: 8px;       
+    font-size: 25px;          
+    cursor: pointer;           
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    position: relative; 
+    z-index: 1;         
+    overflow: hidden;   
+}
+#sayHelloButton::before {
+    content: '';
+    position: absolute; 
+    top: 5px;           
+    left: 5px;         
+    width: 100%;        
+    height: 100%;      
+    background-color: transparent;
+    border: 2px solid #007bff; 
+    border-radius: 8px; 
+    z-index: 0;      
+    transition: all 0.3s ease; 
+}
+
+#sayHelloButton:hover {
+
+     background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    transform: translateY(-2px); 
+}
+
+#sayHelloButton:hover::before {
+    top: 1px;
+    left: 1px;
+   
+}
+
+.hello-overlay {
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%) scale(0.5); 
+  opacity: 0;
+  font-size: 5em;
+  font-weight: bold;
+  color: #fff; 
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  z-index: 10000; 
+  pointer-events: none; 
+  transition: opacity 1s ease-out, transform 1s ease-out; 
+  display: block;
+}
+
+
+.landing1 {
+    margin-top: 200px;
+    width: 100%;
+    height:500px;   
+    position: relative;
+    display: flex;
+ justify-content:space-between  ;
+  align-items: flex-start;
+}
+
+
+.div1{
+    width: 100vh;
+    height: 100%;
+    opacity: 0; 
+    transform: translateX(-100px);
+    animation: slideInLeft 1s ease-out forwards; 
+    animation-delay: 0.5s; 
+
+}
+
+.div1 h1{
+    display: flex;
+    justify-content: center;
+    font-size:40px;
+    margin-top: 70px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+.div1 p{
+    display: flex;
+    font-family: sans-serif;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+
+.div2{
+   width: 100vh;
+    height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden; 
+  opacity: 0;
+  transform: translateX(100px); 
+  animation: slideInRight 1s ease-out forwards; 
+  animation-delay: 0.8s;
+}
+.div2 img {
+   width: 100vh;
+    height: 100%;
+  display: block; 
+  object-fit: contain; 
+}
+
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+
+
+.div1 #playGameDiv1Button{
+     list-style: none;
+
+    background-color: #007bff; 
+    margin-top: 92px;
+    margin-left: 40px;
+    color: white;             
+    padding: 12px 30px;        
+    border: none;             
+    border-radius: 8px;       
+    font-size: 25px;          
+    cursor: pointer;           
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    position: relative; 
+    z-index: 1;         
+    overflow: hidden; 
+     
+}
+
+.div1 #playGameDiv1Button::before {
+    content: '';
+    position: absolute; 
+    top: 5px;           
+    left: 5px;         
+    width: 100%;        
+    height: 100%;      
+    background-color: transparent;
+    border: 2px solid #007bff; 
+    border-radius: 8px; 
+    z-index: 0;      
+    transition: all 0.3s ease; 
+}
+
+.div1 #playGameDiv1Button:hover {
+
+     background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+    transform: translateY(-2px); 
+}
+
+.div1 #playGameDiv1Button::before {
+    top: 1px;
+    left: 1px;
+   
+}
+
+ 
