@@ -7,6 +7,9 @@
    color: #f0f0f0;
    
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
    min-height: 100vh;    
     width: 100%;            
@@ -34,6 +37,7 @@ nav ul{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  
 }
 nav li{
   height: 75px;
@@ -46,7 +50,12 @@ nav a{
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  
+
 }
+
+
 
 .logo{
     font-size: x-large;
@@ -353,5 +362,319 @@ nav .spacer {
     left: 1px;
    
 }
-
+                                             /* ............................About Me...................................... */
  
+.allcard{
+ display: flex;
+/* margin-left: 30px; */
+
+
+}
+.terminal-card {
+    margin:7%;
+    margin-left: 20px;
+    background-color: #21252b; 
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    width: 90%; 
+    max-width: 500px; 
+    max-height: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+
+}
+
+
+
+
+.terminal-header {
+    background-color: #31353f; 
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3c4049; 
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+     animation: dot-light 2s infinite; 
+}
+
+.dot.red { background-color: #ff5f56;
+animation-delay: 0s;
+ }
+.dot.yellow { background-color: #ffbd2e;
+ animation-delay: 0.5s; 
+}
+.dot.green { background-color: #27c93f;
+animation-delay: 1s;
+}
+
+@keyframes dot-light {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7; /* Slightly dimmer */
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.Introduction {
+    color: #abb2bf; 
+    font-size: 0.9em;
+    user-select: none; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.terminal-body {
+    padding: 15px;
+    color: #e0e0e0; 
+    font-size: 1em;
+    line-height: 1.4;
+    white-space: pre; 
+    font-size: 0.9em; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+
+.prompt {
+    color: #61afef; 
+    margin-right: 5px; 
+}
+
+.command {
+    color: #98c379; 
+}
+
+.terminal-body pre {
+     margin: 0;
+    padding: 0;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.terminal-body .prompt:last-of-type::after {
+    content: '_';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.terminal-card {
+    background-color: #21252b; 
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.terminal-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.LinkedIn{
+    color: #27c93f;
+}
+
+
+.GitHub{
+    color:#ff5f56
+}
+.projects{
+color: #B13BFF;
+
+}
+
+
+                                          /* .............................Like section in css ......................... */
+
+
+.feedback-section {
+    width: 100%;
+    max-width: 580px; 
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px 0;
+}
+
+.feedback-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-button {
+    background-color: #3b4048;
+    color: #e0e0e0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feedback-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.like-button:hover {
+    background-color: #98c379; 
+    color: #21252b;
+}
+
+
+.feedback-button.active {
+    background-color: #61afef; 
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.aboutimg{
+   width: 100%;
+   margin-top: 100px;
+   margin-right: 100px;
+}
+                                       /* --- Styles for the cat image --- */
+#catimg {
+      margin-top: 100px;
+
+    height: auto;    
+    display: block;  
+    margin: 20px auto; 
+}
+
+
+                                     /* ..............................Skills...................... */
+.skills {
+    text-align: center; 
+    padding: 40px;
+}
+
+.skills h1 {
+    font-size: 4em; 
+    font-weight: bold;
+    margin: 0; 
+     color: #00bfff;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+                                             /* ...................Tech Skill card.............................. */
+
+
+.skills-page-content {
+    flex-grow: 1; 
+    display: flex;
+    align-items: center; 
+     
+}
+
+
+.skills-card {
+    max-width: 100%; 
+    width: 100%;
+    margin-top: 10px; 
+}
+
+.skills-card .terminal-body {
+    padding: 20px; 
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  
+.skill-category {
+    background-color: #282c34; 
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(97, 175, 239, 0.1); 
+}
+
+.skill-category:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); 
+    border-color: #61afef; 
+}
+
+.skill-category h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #61afef; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    border-bottom: 2px solid rgba(97, 175, 239, 0.3); 
+    padding-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category li {
+    margin-bottom: 12px; 
+    font-size: 1.05em;
+    color: #abb2bf; 
+    position: relative;
+    padding-left: 25px; 
+}
+
+.skill-category li::before {
+    content: '›'; 
+    color: #84ff00;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+.header-title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #abb2bf;
+}
+                                                                 /* ...................Projects section............................... */
