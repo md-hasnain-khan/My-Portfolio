@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    line-height: 1.6;
+   color: #f0f0f0;
+   
+}
+body {
+   min-height: 100vh;    
+    width: 100%;            
+    position: relative;     
+background: radial-gradient(circle at bottom left, #0f172a, #000);        
+}
+
+         /*.............................................Navbar..................................*/
+
+
+nav{
+   background: radial-gradient(circle at bottom left, #0f172a, #000);        
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+   font-size:16px;
+   border-bottom: 1px solid rgb(88, 88, 88);
+   position: fixed; 
+   top: 0;
+   width: 100%;
+   z-index: 1000; 
+} 
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 75px;
+
+}
+nav a{
+  height: 100%;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.logo{
+    font-size: x-large;
+    padding-left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+
+}
+nav .logo:first-child{
+  margin-right: auto;
+  color: #ffcc00;
+}
+nav ul li:nth-child(2) a {
+  color: #00bfff; 
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: #00bfff; 
+}
+
+nav .spacer {
+  flex: 0.4;
+}
+
+                         /* .............................................Navbar Close..................................*/
+
+.allcard{
+ display: flex;
+/* margin-left: 30px; */
+
+
+}
+.terminal-card {
+    margin:7%;
+    margin-left: 20px;
+    background-color: #21252b; 
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    width: 90%; 
+    max-width: 500px; 
+    max-height: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+
+}
+
+
+
+
+.terminal-header {
+    background-color: #31353f; 
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3c4049; 
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+     animation: dot-light 2s infinite; 
+}
+
+.dot.red { background-color: #ff5f56;
+animation-delay: 0s;
+ }
+.dot.yellow { background-color: #ffbd2e;
+ animation-delay: 0.5s; 
+}
+.dot.green { background-color: #27c93f;
+animation-delay: 1s;
+}
+
+@keyframes dot-light {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7; /* Slightly dimmer */
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.Introduction {
+    color: #abb2bf; 
+    font-size: 0.9em;
+    user-select: none; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.terminal-body {
+    padding: 15px;
+    color: #e0e0e0; 
+    font-size: 1em;
+    line-height: 1.4;
+    white-space: pre; 
+    font-size: 0.9em; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+
+.prompt {
+    color: #61afef; 
+    margin-right: 5px; 
+}
+
+.command {
+    color: #98c379; 
+}
+
+.terminal-body pre {
+     margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.terminal-body .prompt:last-of-type::after {
+    content: '_';
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.terminal-card {
+    background-color: #21252b; 
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.terminal-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.LinkedIn{
+    color: #27c93f;
+}
+
+
+.GitHub{
+    color:#ff5f56
+}
+.projects{
+color: #B13BFF;
+
+}
+
+
+                                          /* .............................Like section in css ......................... */
+
+
+.feedback-section {
+    width: 100%;
+    max-width: 580px; 
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px 0;
+}
+
+.feedback-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-button {
+    background-color: #3b4048;
+    color: #e0e0e0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feedback-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.like-button:hover {
+    background-color: #98c379; 
+    color: #21252b;
+}
+
+
+.feedback-button.active {
+    background-color: #61afef; 
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.aboutimg{
+   width: 100%;
+   margin-top: 100px;
+   margin-right: 100px;
+}
+                                       /* --- Styles for the cat image --- */
+#catimg {
+      margin-top: 100px;
+
+    height: auto;    
+    display: block;  
+    margin: 20px auto; 
+}
+
+
+
