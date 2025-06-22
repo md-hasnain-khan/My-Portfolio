@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
 </head>
 <body>
-   
      <nav>
         <ul>
              <h2 class="logo">Logo</h2>
          <li><a href="index.html">Home</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#myskills">Skills</a></li>
-            <li><a href="/Projects">Projects</a></li>
-            <li><a href="/Resume">Resume </a></li>
-            <li><a href="/Contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="/Blog ">Blog</a></li>
 
                  <!-- Spacer -->
@@ -28,6 +27,7 @@
 
 
                                   <!-- Who I am section -->
+       <div class="home-page">                          
     <section class="section">
   <h1>Hello!👋🏻</h1>
   <h2>My name is <strong class="animated-name">
@@ -42,167 +42,434 @@
   <div id="helloOverlay" class="hello-overlay">
   Hello! ✨
 </div>
+
 </section>
-    
+  </div>    
 
                      <!-- .........................Section Close...................... -->
 
-<div class="landing1">
+    <!-- ...................About me......... -->
 
- <div class="div1">
-   <h1> Martin Fowler⇾
-</h1>
- 
-<p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
-  
-
-<button id="playGameDiv1Button"><a href="tictactoe.html"></a>Play Game</button>
- </div>
- <div class="div2">
-        <img src="div2img.webp" alt="Development Team Illustration">
-
- </div>
-
-</div>
-                                          <!-- .........................About Me Section........................ -->
-  <div class="allcard" id="about-me">
-
-    <div class="terminal-card" id="card-right">
-        <div class="terminal-header">
-            <div class="terminal-buttons">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="helloabout.png" alt="">
             </div>
-            <div class="Introduction">About Me</div>
-        </div>
-        <div class="terminal-body">
-            <pre>
-Welcome to my professional portfolio. I’ve designed this website to serve as a complete reflection of my identity skills and journey as a developer. This portfolio highlights all the important aspects of my professional profile in a clean and organized manner. From my resume and technical skills to my project showcase you’ll find everything compiled in one place for easy access.
+            <div class="about-col-2">
 
-Through this portfolio I aim to provide a clear understanding of who I am  what I do, and how I can contribute to impactful <span class="projects">projects</span>. I have included direct links to my <span class="LinkedIn">LinkedIn</span>  <span class="GitHub">GitHub</span> YouTube channel and blog so that you can explore my content code and insights in greater detail. Each section is designed to give you a deeper look into my professional background including my technical expertise work experience and personal initiatives.
+                <h1 class="subtittle">About me </h1>
 
-You can also find my contact information here making it simple for you to connect with me for collaboration job opportunities or freelance work. This portfolio serves not only as a professional showcase but also as a personal space where I express my growth creativity and commitment to continuous learning.
+               <p id="about-me">Trying to make "Hello World" the new "AI".<br>
+I am Student of Bachelor of Computer Applications(BCA) with a strong passion for technology and innovative problem-solving. I enjoy exploring new tools building applications and continuously learning to stay updated with the latest trends in the tech industry.
+While I may still be learning, I make up for it with a strong determination, curiosity, and commitment to growth. I’m always ready to take on new challenges and expand my skill set.<br>
 
-Thank you for visiting and I hope you find value in exploring my journey.
-
-            </pre>
-        </div>
-                     <!-- ...........................Like section.......................... -->
-           <div class="feedback-section">
-            <div class="feedback-buttons">
-                <button id="likeBtn" class="feedback-button like-button">❤️ Like |<span id="likeCount">0</span></button>
-                </div>
-    </div>
+Outside of Tech, I am a Tea Lover ,<br>
+Outside the world of code and algorithms, I find comfort in a good cup of tea — it’s my go-to creative fuel.⚡😁</p>
+                
     
-      </div>
 
-<div class="aboutimg"> 
-    
-<img src="helloabout.png" alt="A cute cat" id="catimg">
-</div> 
-    </div>
+                <div class="tab-tittle">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Tech Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')" >UI & UX</p>
+                    <p class="tab-links" onclick="opentab('Experience')" >Professional Skills</p>
 
-
-                                               <!-- .........................Skils.................. -->
-   <div class="skills">
-        <h1>Technical Skills</h1>
-    </div>
-
-                                                <!-- ....................Tech Skill card............... -->
-
-
-<main class="skills-page-content" id="myskills">
-        <div class="terminal-card skills-card" >
-            <div class="terminal-header">
-                <div class="terminal-buttons">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
                 </div>
-                <div class="header-title">Technical Skills
-</div>
+
+                           <!-- ....................Technical Skills Skills ....................... -->
+
+                <div class="tab-contents active-tab rerange " id="skills" >
+                    <ul>
+                        <li><span>Frontend</span><br> HTML5/ CSS3/ JAVASCRIPT</li>
+                        <li><span>Backend</span><br>Node.js/ Node Express/ Java/ Java OOPs/ Python/ C/C++</li>
+                        <li><span>Database</span><br>MySql</li>
+                        <li><span>Frameworks & Libraries
+                       </span><br> React.js/ Next.js
+                         / Bootstrap/ Tailwind CSS/ NumPy</li>
+                        <li><span>Tools & Platforms
+                       </span><br> Git/ GitHub
+                         / VS Code/ Android Studio/ Google Colab</li>
+                    </ul>
+                </div>
+                           <!-- ....................Technical Skills Skills close....................... -->
+
+
+
+
+                                                <!-- ....................UI & UX Skills close....................... -->
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>UI & UX</span><br>Figma</li>
+                        <li><span>Graphic Design</span><br>Photoshop/ Canva </li>
+                        <li><span> </span><br> </li>
+                        <li><span> </span><br> </li>
+                        <li><span> </span><br> </li>
+                    </ul>
+                </div>
+                                <!-- ....................UI & UX Skill close....................... -->
+
+
+                <!-- ....................Professional Skills....................... -->
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Problem Solving</span><br>Ability to identify bugs, optimize code, and develop efficient solutions.
+
+</li>
+                        <li><span>Communication Skills
+</span><br>Clear and professional written and verbal communication.
+</li>
+                        <li><span>Project Management
+</span><br>Basic understanding of task planning, roadmaps, and delivery using tools like Trello, Notion, or Jira.
+
+
+</li>
+                        <li><span>Creative Thinking
+</span><br>Designing unique UI layouts and solving design challenges.
+
+</li>
+                        <li><span>Creative Thinking
+</span><br>Designing unique UI layouts and solving design challenges.
+
+</li>
+                    </ul>
+                </div>
             </div>
-            <div class="terminal-body skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                       </ul>
+        </div>
+    </div>
+</div>
+              
+
+                                  <!-- ................. Project Section      ................................-->
+       
+
+<!--............ One by One Show Project ............-->
+<div class="card" id="projects">
+  <div class="loader">
+    <p class="MyProject">Projects |</p>
+    <div class="words"  id="projectWords">
+      <span class="word">Music Custom Player</span>
+      <span class="word">Netflix Clone</span>
+      <span class="word">E-commerce WebSite</span>
+      <span class="word">Sports Learning and Community Application</span>
+      <span class="word">Music Custom Player</span>
+   </div>
+  </div>
+</div>
+
+<!--...................... close ............... -->
+
+        <div class="main-container">
+
+            <div class="main1-container">
+
+                <div class="card-header-top">
+                    <div class="project-number-circle">01</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
                 </div>
 
-                  <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Java</li>
-                        <li>Java OOPs</li>
-                        <li>Python</li>
-                        <li>C/C++</li>
-                        <li>SQL</li>
-                         </ul>
+                <div class="project-image">
+                    <img src="spotifyclone.webp" alt="Spotify Clone UI" class="main-project-img">
                 </div>
 
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <ul>
-                        <li>React.js</li>
-                        <li>Next.js</li>
-                        <li>Bootstrap</li>
-                        <li>Tailwind CSS</li>
-                        <li>NumPy</li>
-                        </ul>
-                </div>
+             <h3 class="project-title">Spotify Clone</h3>
 
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                        <li>Android Studio</li>
-                        <li>Google Colab</li>
-                      
-                        </ul>
+   
+                <div class="project-buttons-section">
+                    <a href="https://your-spotify-clone-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/spotify-clone-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-spotify.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
                 </div>
+            </div>
 
-                <div class="skill-category">
-                    <h3>Design & UI</h3>
-                    <ul>
-                        <li>Figma</li>
-                        <li>Responsive Web Design</li>
-                        <li>UI/UX Principles</li>
-                        </ul>
+            <div class="main1-container">
+                <div class="card-header-top">
+                    <div class="project-number-circle">02</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
+                    </div>
                 </div>
+                <div class="project-image">
+                    <img src="spotifyclone.webp" alt="E-commerce Dashboard" class="main-project-img">
+                </div>
+                <h3 class="project-title">E-commerce Admin Dashboard</h3>
 
-                <div class="skill-category">
-                    <h3>Other</h3>
-                    <ul>
-                        <li>MongoDB</li>
-                        <li>Firebase</li>
-                        <li>JSON</li>
-                        <li>REST API Integration</li>
-                        <li>NPM</li>
-                         </ul>
+                <div class="project-buttons-section">
+                    <a href="https://your-spotify-clone-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/spotify-clone-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-spotify.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
                 </div>
+            </div>
+
+
+            
+            <div class="main1-container">
+                <div class="card-header-top">
+                    <div class="project-number-circle">03</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="project-image-main">
+                    <img src="spotifyclone.webp" alt="Travel App Concept" class="main-project-img">
+                </div>
+                <h3 class="project-title">Interactive Travel Planner</h3>
                
+                <div class="project-buttons-section">
+                    <a href="https://your-travel-app-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/travel-app-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-travel.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
+                </div>
+            </div>
+            <div class="main1-container">
+                <div class="card-header-top">
+                    <div class="project-number-circle">03</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="project-image-main">
+                    <img src="spotifyclone.webp" alt="Travel App Concept" class="main-project-img">
+                </div>
+                <h3 class="project-title">Interactive Travel Planner</h3>
+               
+                <div class="project-buttons-section">
+                    <a href="https://your-travel-app-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/travel-app-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-travel.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
+                </div>
+            </div>
+            <div class="main1-container">
+                <div class="card-header-top">
+                    <div class="project-number-circle">03</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="project-image-main">
+                    <img src="spotifyclone.webp" alt="Travel App Concept" class="main-project-img">
+                </div>
+                <h3 class="project-title">Interactive Travel Planner</h3>
+               
+                <div class="project-buttons-section">
+                    <a href="https://your-travel-app-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/travel-app-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-travel.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
+                </div>
+            </div>
+            <div class="main1-container">
+                <div class="card-header-top">
+                    <div class="project-number-circle">03</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="project-image-main">
+                    <img src="spotifyclone.webp" alt="Travel App Concept" class="main-project-img">
+                </div>
+                <h3 class="project-title">Interactive Travel Planner</h3>
+               
+                <div class="project-buttons-section">
+                    <a href="https://your-travel-app-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/travel-app-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-travel.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
+                </div>
+            </div>
+            <div class="main1-container">
+                <div class="card-header-top">
+                    <div class="project-number-circle">03</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="project-image-main">
+                    <img src="spotifyclone.webp" alt="Travel App Concept" class="main-project-img">
+                </div>
+                <h3 class="project-title">Interactive Travel Planner</h3>
+               
+                <div class="project-buttons-section">
+                    <a href="https://your-travel-app-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/travel-app-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-travel.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
+                </div>
+            </div>
+            <div class="main1-container">
+                <div class="card-header-top">
+                    <div class="project-number-circle">03</div>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="project-image-main">
+                    <img src="spotifyclone.webp" alt="Travel App Concept" class="main-project-img">
+                </div>
+                <h3 class="project-title">Interactive Travel Planner</h3>
+               
+                <div class="project-buttons-section">
+                    <a href="https://your-travel-app-demo.com" target="_blank" class="project-btn unique-live-demo-btn">
+                        <i class="fas fa-play-circle"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/your-username/travel-app-repo" target="_blank" class="project-btn unique-github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://your-case-study-travel.com" target="_blank" class="project-btn unique-case-study-btn">
+                        <i class="fas fa-file-alt"></i> Case Study
+                    </a>
+                </div>
+            </div>
+
+        </div> 
+
+
+      <!-- ........................Resume Section......................... -->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle"> contact me </h1>
+                <p> <i class="fa-solid fa-paper-plane" id="contactfom"></i>khanhasnainali21@gmail.com</p>
+                <p> <i class="fa-solid fa-phone" id="contactfom"></i> 7617418624, 9068328724</p>
+                <div class="socialicoin">
+                    <a href="https://x.com/hasnain01k"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/hasnain.010/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/md-hasnain-037781366/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>  
+                <a href="md hasnain.pdf" download class="btn btn2" id="mycv">donwload CV </a> 
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name"required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2 ">Submit</button>
+                </form>
+                <span id="msg"> </span>
             </div>
         </div>
-    </main>
+    </div>
+   
+</div>
+
+ <div class="copyright">
+    <p>Copyright &copy; <span id="current-year"></span> by <i class="fa-solid fa-heart"></i> Md hansain</p>
+
+    
+</div>
 
 
 
-                                                      <!-- .................................project section............................................... -->
+<!-- .........................................JavaScript Code Star.............................t -->
 
 
 
 
+                                                                 <!-- .................CopyRight section..................... -->
 
 
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
 
+    const currentYearSpan = document.getElementById('current-year');
+    if (currentYearSpan) { 
+        currentYearSpan.textContent = new Date().getFullYear();
+    }
+});
+
+</script>
+
+                                                                 <!-- .................About Me section..................... -->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+     for(tablink of tablinks){
+        tablink.classList.remove("active-links") 
+     }
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+     }
+
+     event.currentTarget.classList.add("active-links");
+   document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+                                                                 <!-- .................Contact  Me section..................... -->
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwId4NwBfoJTXkJhnxm-b_oiNuMJMUAr8CScO3yfIE7Xs9yrZhK0Rm4qJzkypGNx73D/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000)
+            form.reset()
+        
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script src="script.js"></script>
 </body>
