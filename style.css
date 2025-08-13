@@ -16,9 +16,22 @@ html {
 body {
    min-height: 100vh;    
     width: 100%;            
-    position: relative;     
-background: radial-gradient(circle at bottom left, #0f172a, #000);        
+    position: relative;   
+       background: #010016;
+  
+/* background: radial-gradient(circle at bottom left, #0f172a, #000);  
+       */
 }
+
+
+
+
+
+
+
+
+
+
 
          /*.............................................Navbar..................................*/
 
@@ -38,15 +51,7 @@ position: sticky;
             align-items: center;
             flex-wrap: wrap;
         }
-         .logo {
-
-            font-size: 1.5rem;
-            font-weight: bold;
-            font-family:Arial, Helvetica, sans-serif;
-            color: #ffcc00;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+        
        .navigation {
              display: none;  
             align-items: center;
@@ -93,9 +98,10 @@ position: sticky;
           }  
   
   .search-input {
+    
     background: transparent;
             padding: 0.5rem;
-            border: 1px solid #d1d5db;
+            border: 0.1px solid #424144;
             border-radius: 0.5rem;
             outline: none;
             transition: all 0.3s ease;
@@ -202,6 +208,8 @@ position: sticky;
 .home-page{
     width: 100%;
     height: 80vh;
+    
+
 
 }                             
 .section {
@@ -288,7 +296,7 @@ position: sticky;
   animation-timing-function:step-start;
 }
 
-.animated-name .letter:nth-child(1) { animation-delay: 0s; }  
+.animated-name .letter:nth-child(1) { animation-delay: 0s;   }  
 .animated-name .letter:nth-child(2) { animation-delay: 0.1s; } 
 .animated-name .letter:nth-child(3) { animation-delay: 0.2s; } 
 .animated-name .letter:nth-child(4) { animation-delay: 0.3s; } 
@@ -536,20 +544,24 @@ position: sticky;
  border-radius: 20px;
  opacity: 0;
  transition: 0.4s ease;
-          }
+
+
+}
 
 
 .lang:hover::before {
   opacity: 1;
 
 
-    }
+
+ }
+
+
 .program-name{
  display: flex; 
  align-items: center;
  justify-content: space-between; 
 }
-
 
 
 .program-name .name{
@@ -558,6 +570,7 @@ position: sticky;
  font-weight: bold;
 }
 
+
 .lang-intro{
 margin-top: 0.5rem;
  color: #ccc;
@@ -565,12 +578,14 @@ margin-top: 0.5rem;
 
 }
 
+
 .scroll-bar{
   margin-top: 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #ababab;
 }
+
 
 .tech{
   background-color:rgba(35, 35, 35, 0.6);
@@ -582,6 +597,8 @@ margin-top: 0.5rem;
   border-radius: 8px;
   gap: 40px;
 }
+
+
 .progress{
   width: 200px;
   height: 200px;
@@ -593,6 +610,7 @@ margin-top: 0.5rem;
   transition: border, transform 0.3s ease;
 
 }
+
 
 .progress:hover{
  border: 0.1px solid rgba(2, 120, 216, 0.6);
@@ -616,8 +634,6 @@ margin-top: 0.5rem;
  
 
 
-
-
                                               /* .................Resume Section........................*/
 
  #contact{
@@ -633,6 +649,7 @@ margin-top: 0.5rem;
 
 
 }
+
 .contact-left .subtitle{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
 
